@@ -1,0 +1,27 @@
+spring:
+  codec:
+    max-in-memory-size: 10MB
+  application:
+    name: chat-bot
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 200MB
+  ai:
+    openai:
+      chat:
+        api-key:
+      embedding:
+        api-key:
+
+
+server:
+  port: 8080
+
+
+azure:
+  speech:
+    key:
+    region: eastasia
+    language: zh-CN
+    voiceName: zh-cn-YunfengNeural
